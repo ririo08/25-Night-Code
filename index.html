@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>25時、ナイトコードへレッツゴー</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@ririo08" />
   <meta property="og:url" content="https://ririo08.github.io/25-Night-Code/" />
@@ -17,14 +17,49 @@
 
 <body>
   <div class="container">
-    <h1><a href="go.html" target="_blank" rel="noopener noreferrer">25時、ナイトコードへレッツゴー</a></h1>
-    <h2>これは何？</h2>
-    <p>2021/07/30にて行われた「25時、ナイトコードで行われるメンバーの作業風景を公開！」を再生するためのリンクを提供するサイトです。</p>
-    <p>YouTubeのプレミア公開という形で公開されたのですが、3本に分割された8時間ずつの動画を実時間に合わせて公開するという使用だったため、リアルタイムで見ていた方以外は実時間に合わせ辛いと思いこちらを作成しました。</p>
-    <p>リンクをクリックすると、現在の実時間に合わせてYouTubeの再生ページが開きます。</p>
-    <p>使用上、再生が終了すると止まってしまうので、もう一度リンクを開く必要があります。</p>
-    <p>現在の時刻は<span id="clock">…</span>です。こちらが正しければ機能するはずです…</p>
-    <p>ネットワークの都合上確実にイコールの時間になるわけではありません。自分の環境（多分最速）ではアベレージが3秒だったので現在の時刻+3秒で取得するようになっています。</p>
+    <div class="titleBar">
+      <div class="titleBar-button"></div>
+      <div class="titleBar-button"></div>
+      <div class="titleBar-button"></div>
+    </div>
+    <div class="flexbox">
+      <div class="flexbox-left">
+        <div class="serverTitleBlock">
+          <p class="h1">25時、ナイトコードで</p>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+            class="serverTitleBlock-arrow" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="white"
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+            </path>
+          </svg>
+        </div>
+      </div>
+      <div class="flexbox-right">
+        <div class="linkBox">
+          <a class="linkBox-target" href="go.html" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-word" class="linkBox-target_svg"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path fill="white"
+                d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm220.1-208c-5.7 0-10.6 4-11.7 9.5-20.6 97.7-20.4 95.4-21 103.5-.2-1.2-.4-2.6-.7-4.3-.8-5.1.3.2-23.6-99.5-1.3-5.4-6.1-9.2-11.7-9.2h-13.3c-5.5 0-10.3 3.8-11.7 9.1-24.4 99-24 96.2-24.8 103.7-.1-1.1-.2-2.5-.5-4.2-.7-5.2-14.1-73.3-19.1-99-1.1-5.6-6-9.7-11.8-9.7h-16.8c-7.8 0-13.5 7.3-11.7 14.8 8 32.6 26.7 109.5 33.2 136 1.3 5.4 6.1 9.1 11.7 9.1h25.2c5.5 0 10.3-3.7 11.6-9.1l17.9-71.4c1.5-6.2 2.5-12 3-17.3l2.9 17.3c.1.4 12.6 50.5 17.9 71.4 1.3 5.3 6.1 9.1 11.6 9.1h24.7c5.5 0 10.3-3.7 11.6-9.1 20.8-81.9 30.2-119 34.5-136 1.9-7.6-3.8-14.9-11.6-14.9h-15.8z">
+              </path>
+            </svg>
+            <p class="linkBox-target_title">25時、ナイトコードへレッツゴー</p>
+          </a>
+        </div>
+        <div class="chatBox">
+          <h2>これは何？</h2>
+          <p>2021/07/30にて行われた<strong>「25時、ナイトコードで行われるメンバーの作業風景を公開！」</strong>を再生するためのリンクを提供するサイトです。</p>
+          <p>
+            YouTubeのプレミア公開という形で公開されたのですが、3本に分割された8時間ずつの動画を実時間に合わせて公開するという使用だったため、リアルタイムで見ていた方以外は実時間に合わせ辛いと思いこちらを作成しました。
+          </p>
+          <p>リンクをクリックすると、現在の実時間に合わせてYouTubeの再生ページが開きます。</p>
+          <p>使用上、再生が終了すると止まってしまうので、もう一度リンクを開く必要があります。</p>
+          <p>現在の時刻は<span id="clock">…</span>です。こちらが正しければ機能するはずです…</p>
+          <p>ネットワークの都合上確実にイコールの時間になるわけではありません。自分の環境（多分最速）ではアベレージが3秒だったので現在の時刻+3秒で取得するようになっています。</p>
+          <p>上部のリンクをクリックすれば飛べます。</p>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

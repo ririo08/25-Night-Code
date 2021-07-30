@@ -1,0 +1,157 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  margin: 5px;
+  max-width: 100%;
+}
+
+h1,
+.h1 {
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  line-height: 10px;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+}
+
+p {
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #3E365A;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+}
+
+.titleBar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 25px;
+  border-bottom: solid 1px #302746;
+  z-index: 10;
+}
+
+.titleBar-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 5px;
+  margin-left: 2px;
+}
+
+.titleBar-button:nth-child(1) {
+  background-color: #40DBFB;
+}
+
+.titleBar-button:nth-child(2) {
+  background-color: #FCDD56;
+}
+
+.titleBar-button:nth-child(3) {
+  background-color: #F855A6;
+  margin-right: 12px;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexbox-left {
+  -ms-flex-preferred-size: 240px;
+      flex-basis: 240px;
+}
+
+.flexbox-right {
+  max-width: 800px;
+  width: 100%;
+  background-color: #4F4869;
+  border-radius: 5px;
+}
+
+.serverTitleBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.serverTitleBlock-arrow {
+  width: 16px;
+  height: 16px;
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+.linkBox {
+  min-width: 180px;
+  max-width: 300px;
+  margin-left: 60px;
+  height: 60px;
+}
+
+.linkBox-target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  background-color: #6B6682;
+  border-radius: 5px;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.linkBox-target_svg {
+  width: 30px;
+  height: 40px;
+  margin: auto 10px;
+}
+
+.linkBox-target_title {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.chatBox {
+  padding: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexbox {
+    display: block;
+  }
+  .flexbox-left {
+    display: none;
+  }
+  .linkBox {
+    padding-top: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
