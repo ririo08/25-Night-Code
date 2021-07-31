@@ -86,6 +86,11 @@ p {
   }
 }
 
+.title {
+  margin: 5px;
+  margin-top: 16px;
+}
+
 .serverTitleBlock {
   display: flex;
   height: 32px;
@@ -110,13 +115,13 @@ p {
     text-align:center;
     color: white;
     background-color: $linkColor;
-    border-radius: 5px;
+    border-radius: 8px;
     border-bottom: none;
     text-decoration: none;
     &_svg {
       width: 30px;
       height: 40px;
-      margin: auto 10px;
+      margin: auto 20px;
     }
     &_title {
       font-size: 16px;
