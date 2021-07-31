@@ -163,6 +163,10 @@ p {
   text-decoration: none;
 }
 
+.linkBox-target:hover {
+  text-decoration: underline;
+}
+
 .linkBox-target_svg {
   width: 30px;
   height: 40px;
@@ -178,6 +182,52 @@ p {
   padding: 5px;
 }
 
+.st0 {
+  fill: white;
+}
+
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: white;
+}
+
+.st2 {
+  fill: #4F4869;
+}
+
+.shareBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.shareBox-twitterShare {
+  display: block;
+  height: 40px;
+  width: 120px;
+}
+
+.shareBox-twitter {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-top: -4px;
+  margin-left: 10px;
+  color: white;
+}
+
+.shareBox-github {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-top: -4px;
+  margin-left: 10px;
+  color: white;
+}
+
 @media screen and (max-width: 1024px) {
   .flexbox {
     display: block;
@@ -189,5 +239,8 @@ p {
     padding-top: 20px;
     margin: auto;
     margin-bottom: 40px;
+  }
+  .shareBox {
+    padding-bottom: 10px;
   }
 }
