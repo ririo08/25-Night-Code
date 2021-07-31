@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -9,6 +10,7 @@ body {
   background-color: #000;
   margin: 5px;
   max-width: 100%;
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
 }
 
 h1,
@@ -86,7 +88,7 @@ p {
   max-width: 800px;
   width: 100%;
   background-color: #4F4869;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .title {
@@ -111,10 +113,40 @@ p {
   margin-left: 10px;
 }
 
+.nameBox {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.nameBox-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.nameBox-name {
+  vertical-align: top;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.nameBox-time {
+  vertical-align: top;
+  color: #bbb;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 28px;
+}
+
 .linkBox {
   min-width: 180px;
   max-width: 300px;
   margin-left: 60px;
+  margin-top: -10px;
   height: 60px;
 }
 
@@ -123,7 +155,6 @@ p {
   display: -ms-flexbox;
   display: flex;
   height: 60px;
-  margin-top: 20px;
   text-align: center;
   color: white;
   background-color: #6B6682;
